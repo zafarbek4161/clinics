@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Contact</title>
+{% endblock %}
+{% block content %}
+    <section id="consultation" class="form">
+        <div class="containerc">
+            <div class="form_inner">
+            <div class="form_content">
+                <div class="form_title-box">
+                <div class="form_title"> 
+                    Order food
+                </div>
+                <div class="form_text"><h3>If you want to eat food please order food in our cafe</h3></div>
+                </div>
+                </div>
+            </div>
+            </div>
+        <div class="form_box">
+            <form>
+            <div class="form_box-inner">
+                <div class="form_box-left">
+                <label>
+                    E-mail
+                <input type="text">    
+                </label>
+                    <label>
+                    Contact telephone
+                <input type="text">    
+                </label>
+                    <label>
+                    Name
+                <input type="text">    
+                </label>
+                    <label>      
+                    Menues
+                    <select>
+                    <option>Samarkand plov</option>
+                    <option>Samarkand qozon kebab</option>
+                    <option>Samarkand tuy kebab</option>
+                    <option>Samarkand shurva</option>
+                    </select>
+                </label>
+                        </div>
+                <div class="form_box-right">
+                <label>
+                    Messanger
+                <textarea></textarea>   
+                </label>
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn">Order food</a>
+                </div>
+                </div>
+            </form>
+        </div>
+    </section>
+{% endblock %}

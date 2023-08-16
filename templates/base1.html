@@ -1,0 +1,55 @@
+{% load static %}
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <limk rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" href="javascript/jquery.fancybox.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.formstyler.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.formstyler.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/jquery.formstyler.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</head>
+<body>
+    <heder class="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="header_)contacts">
+                    <a class="header_phone" href="tel:380963092145">+998 90 2284161</a>
+                    <a class="header_email" href="https://www.gmail.com/">zafarb.narzikulov@gmail.com</a>
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="header_button" href="#">To order a site</a>
+                </div>
+            </div>  
+        </div>
+            <div class="header_content">
+                <div class="container">
+                    <div class="header_logo">
+                        <a href="{% url 'index' %}">
+                            <img src="{% static 'images/logo.png' %}" style="width: 165px;">
+                        </a>
+                <div class="header_content-inner">
+                <nav class="menu">
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About Me</a></li>
+                    <li><a href="{% url 'news_home' %}">News</a></li>
+                    <li><a href="{% url 'consultation' %}">Consultation</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+                </nav>
+                </div>
+                    </div>    
+                </div>
+            </div>
+    </heder>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
